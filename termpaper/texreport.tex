@@ -18,9 +18,10 @@
 
 \title{\vfill Term Paper Template} %\vfill gives us the black space at the top of the page
 \author{
-By Your Name Here\vspace{10pt} \\
-CSC 300: Professional Responsibilities\vspace{10pt} \\
-Dr. Clark Turner\vspace{10pt} \\
+James Pearson \vspace{10pt} \\
+CSC 300: Professional Responsibilities  \vspace{10pt} \\
+Section 1 \vspace{10pt} \\
+Dr. Clark Turner \vspace{10pt} \\
 }
 %\date{October 22, 2010} %Or use \Today for today's Date
 \date{\today}
@@ -29,7 +30,7 @@ Dr. Clark Turner\vspace{10pt} \\
 
 \vfill  %in combinaion with \newpage this forces the abstract to the bottom of the page
 \begin{abstract}
-5\%  One or two sentences of context about your issue. Provide your focus question. Mention one or two relevant arguments.  Briefly explain your conclusion and why it is proper ethically. Should be no more than one paragraph (100 words max) \cite{handout}
+Although software maintenance makes up most of the work a software engineer will do in the workplace, Cal Poly requires Software Engineering undergraduates to take only two courses that cover software maintenance.  Considering this, is it ethical for the Computer Science department to state that the program is designed to produce software professionals?
 \end{abstract}
 
 \thispagestyle{empty} %remove page number from title page
@@ -56,75 +57,36 @@ Dr. Clark Turner\vspace{10pt} \\
 %%%%%%%%%%%%%%%%%%%%
 \section{Facts}
 
-\begin{itemize}
+The Cal Poly catalog states that the Software Engineering undergraduate degree "prepares students to become software professionals who develop software 
+products on time, within budget, and that meet customer requirements". \cite{catalogDept}  It also says that the program differs from the similar Computer Science undergraduate degree program in four ways, one of which is having "classes [that] include significant learning in engineering and management areas such as quality assurance, testing, metrics, maintenance, configuration management and interpersonal management skills." \cite{catalogDept}
 
-\item General context of the issue
-\item Only facts that clearly point to the issue/question at hand (you may add additional facts as needed in your analysis that aren't in your facts section)
-\item The facts section should end up leading the reader to the question you are about to ask them (a controversy or a case ending poorly is a great way to do this).
-\item Should not indicate anything about your answer to the question or hint at any particular conclusion.
-\cite{handout}
-\end{itemize}
+George E. Stark claims that "maintenance consumes between 60 percent and 80 percent of a typical product's total software lifecycle expenditures". \cite{stark97}  Girish Parekh says that it is two-thirds of the lifecycle and consumes at least 50 percent of most programmers' time. \cite{parekh}
+
+Andrews and Lutfiyya, while preparing in 1998 for a software maintenance course at the University of Western Ontario, found no courses at other universities in which students performed maintenance activities on legacy software. \cite{Andrews:2000:ERS:794188.794320} They also found that "most computer science programs offer[ed] no more than two software engineering course". \cite{Andrews:2000:ERS:794188.794320}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Research Question %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research Question}
-One sentence (one question, not compound). Should be focused on a particular case. Should have a determinable yes or no answer that you will draw based on your research.  Should be followed (separately) by a paragraph explaining the importance of this question and its relevance to software engineers (why should we care?). \cite{handout}
+Given that Cal Poly requires Software Engineering undergraduates to take only two courses that cover software maintenance, is it ethical for the Computer Science department to state that the program is designed to produce software professionals?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Extant Arguments from External Sources %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extant arguments}
 
-\section{Arguments For}
-\subsection{Arg 1}
-The first argument for your topic
-\subsection{Arg 2}
-The second argument for your topic...
-\section{Arguments Against}
-\subsection{Arg 1}
-The first argument against your topic.
-\subsection{Arg 2}
-The second argument against your topic...
+Andrews and Lutfiyya found that their software maintenance course "gave students valuable experience in the qualitatively different task of software maintenance". \cite{Andrews:2000:ERS:794188.794320}  Engle, Ford and Korson state that it is "important for students to have experienced [software maintenance]". \cite{engle}
 
-%the * causes a section with no numbering also doesn't appear in the table of contents
-\subsubsection*{Requirements for the Arguments section(s) (from the handout)}
-Summarize the main arguments others have made about the answers to your focus question. Provide the state of research on your focus question. Must be referenced appropriately.  All statements must be a summary of the source's arguments, devoid of your opinions or biases on the issue. Must (separately) cover arguments on both sides of your issue - that is, those that answer your focus question affirmatively and those that answer negatively. \cite{handout}
+I have not found any arguments against including maintenance as a part of software engineering curriculum.
 
 %%%%%%%%%%%%%%%%
 %%% Analysis %%%
 %%%%%%%%%%%%%%%%
 \section{Analysis}
-\begin{itemize}
-   \item Should start with a paragraph showing why the SE Code applies to your focus
-question.
-   \item Sub-headings to delineate your lines of reasoning are required.
-   \item All arguments must be thoroughly supported by reason and logic.
-   \item All claims must be supported by reputable primary sources and formal data.
-   \item SE Code must be central to the argumentation
-   \begin{itemize}
-      \item You should have 2-4 distinct sections of the SE code utilized in your analysis
-      \begin{itemize}
-         \item If section 1 is central to your argument, it is only one of the code sections covered. Do not rely solely on section one. Ex: 1.01-1.04 will not suffice for all of your SE Code based arguments and citations.
-         \item If discussion about Òpublic goodÓ is used, there must be data to support it. Simply writing Òit benefits the general public because it would make many people happyÓ is insufficient.
-      \end{itemize}
-   \end{itemize}
-   \item Utilitarian and deontological analysis must be present but not be separate sections
-   \item Class reading must be referenced as appropriate (at least one paper must be used as the basis of one of the arguments).
-   \item There should be a clear cohesiveness to the analysis such that each argument logically flows into the next and gently directs the reader toward your conclusion while implicitly providing answers to any doubts they may have through logic and data.
-   \item Opinions > dev/null. \cite{handout}
-\end{itemize}
 
-Look at Jason Anderson's how to write a term paper (currently linked as the paper template) for information on how to write this section.  An example of possible sections follows
-\subsection{Why the SE Code Applies}
-\subsection{Argument 1}
-\subsubsection{Code principle 1 that applies}
-\subsubsection{Code principle 2 that applies}
-\subsection{Argument 2}
-\subsubsection{Code principle 1 that applies}
-\subsubsection{Code principle 2 that applies}
+The ACM's Software Engineering Code explicitly mentions software maintenance as one of the things software engineers should focus on. \cite{secode}
 
-\subsubsection*{}
-Remember to weave the class papers and other ethical systems arguments in with the se code arguments they shouldn't be separate sections.
+Contrast the amount of time spent on software maintenance in the field with the amount of time devoted to it in education.  Then, discuss how the SE code states that software engineers should be educated in software maintenance.
 
 %%%%%%%%%%%%%%%%
 %%% Conclusion %%%
