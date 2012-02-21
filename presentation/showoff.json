@@ -1,6 +1,11 @@
 {
 	"name": "A Software Maintenance Course",
 	"sections": [
-		{"section":"01-intro"}
+		{"section":"01-intro"},
+		{"section":"02-facts"},
+		{"section":"03-question"},
+		{"section":"04-why-care"},
+		{"section":"05-arguments"},
+		{"section":"06-analysis"}
 	]
 }
