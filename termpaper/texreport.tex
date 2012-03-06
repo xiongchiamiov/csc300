@@ -7,6 +7,10 @@
 % like title page and table of contents are single column
 \usepackage{multicol}
 
+\usepackage{graphicx}
+\usepackage{dblfloatfix}
+\usepackage{fixltx2e}
+
 \usepackage{setspace}
 \usepackage{url}
 
@@ -113,7 +117,17 @@ Andrews and Lutfiyya also noted issues with finding available projects that woul
 
 This paper will use the ACM's Software Engineering Code of Ethics as a basis for evaluating the ethicality of the Computer Science department's course offerings.  Therefore, we must first show that the SE Code may be applied to the department.
 
-The preamble to the Code explicitly states that it applies to those engaged in the education of software engineers: ``Software engineers are those who contribute by direct participation or by teaching, to the analysis, specification, design, development, certification, maintenance and testing of software systems''.  A few sentences later, it again reaffirms this: ``The Code contains eight Principles related to the behavior of and decisions made by professional software engineers, including [...] educators''. \cite{secode}
+The preamble to the Code explicitly states that it applies to those engaged in the education of software engineers:
+
+\begin{quote}
+``Software engineers are those who contribute by direct participation or by teaching, to the analysis, specification, design, development, certification, maintenance and testing of software systems''. \cite{secode}
+\end{quote}
+
+A few sentences later, it reaffirms this:
+
+\begin{quote}
+``The Code contains eight Principles related to the behavior of and decisions made by professional software engineers, including [...] educators''. \cite{secode}
+\end{quote}
 
 % SE Code: ``Software engineers are those who contribute by direct participation or by teaching, to the analysis, specification, design, development, certification, maintenance and testing of software systems.''
 
@@ -126,6 +140,7 @@ The preamble to the Code explicitly states that it applies to those engaged in t
 % 3.11. Ensure adequate documentation, including significant problems discovered and solutions adopted, for any project on which they work.
 % 3.15 Treat all forms of software maintenance with the same professionalism as new development.
 % 5.06. Attract potential software engineers only by full and accurate description of the conditions of employment.
+% 5.11. Not ask a software engineer to do anything inconsistent with this Code. (professors as employees, not fully preparing us)
 % 6.04. Support, as members of a profession, other software engineers striving to follow this Code.
 % 6.07. Be accurate in stating the characteristics of software on which they work, avoiding not only false claims but also claims that might reasonably be supposed to be speculative, vacuous, deceptive, misleading, or doubtful.
 % 6.11. Recognize that violations of this Code are inconsistent with being a professional software engineer.
@@ -150,13 +165,17 @@ The preamble to the Code explicitly states that it applies to those engaged in t
 
 \subsection{Accurate Descriptions of Employment}
 
-Section 5 of the SE Code states that ``those managing or leading software engineers shall ... [a]ttract potential software engineers only by full and accurate description of the conditions of employment.'' \cite{secode}
+Section 5 of the SE Code states:
+
+\begin{quote}
+``those managing or leading software engineers shall ... [a]ttract potential software engineers only by full and accurate description of the conditions of employment.'' \cite{secode}
+\end{quote}
 
 \subsubsection{School vs. Employment}
 
-It has been said that students should ``think of school as their job''. \cite{schoolJob}  If students are employees, are the teachers their managers?  Both teachers and managers hand out assignments; both teachers and managers give out grades based on performance. \cite{performanceReview}
+It has been said that students should ``think of school as their job''. \cite{schoolJob}  If students are employees, are the teachers their managers?  Both teachers and managers hand out assignments; both teachers and managers give out grades based on performance. \cite{performanceReview}  This is an artificial construct (the department is not truly an employer to its students, aside from any extra-curricular employments), but it provides a useful mindset from which to evaluate Section 5.06 for the scope of this paper.
 
-In addition to managers, the SE Code refers to those persons who are ``leading software engineers''.  The Computer Science department has set out a list of courses that Software Engineering undergraduate students must take to graudate. \cite{catalogDegree}  In this way, they are leading students down a specified path of instruction in the field of Software Engineering and thus Section 5 of the SE Code applies to them.
+In addition to managers, the SE Code says that it applies to those persons who are ``leading software engineers''.  The Computer Science department has set out a list of courses that Software Engineering undergraduate students must take to graduate. \cite{catalogDegree}  In this way, they are leading students down a specified path of instruction in the field of Software Engineering and thus Section 5 of the SE Code applies to them.
 
 Once again considering the ``school is a job'' adage, we can draw parallels between the ``employment'' discussed in section 5.06 and a student's time at a university.
 
@@ -174,11 +193,42 @@ CSC 406 covers ``[d]eployment of a sizeable software product by a student team. 
 
 With only 30 Monday-Wednesday-Friday instructional days in the quarter \cite{polyCalendar}, a Software Engineering student will receive approximately 10 days of instruction in software maintenance over the course of their academic career.  When compared to the total number of years spent at Cal Poly, this number does not appear to be ``noteworthy''.
 
+\begin{figure*}[tb!]
+  \caption{Percentage of time spent on maintenance in CPE 309 and CPE 406 (approximate).}
+  \centering
+    \includegraphics[width=0.5\textwidth]{termpaper/images/pie-chart-01}
+\end{figure*}
+
+\begin{figure*}[tb!]
+  \caption{Percentage of time spent on maintenance in Software Engineering major courses (approximate).}
+  \centering
+    \includegraphics[width=0.5\textwidth]{termpaper/images/pie-chart-02}
+\end{figure*}
+
+\begin{figure*}[tb!]
+  \caption{Percentage of time spent on maintenance in Software Engineering all courses (approximate).}
+  \centering
+    \includegraphics[width=0.5\textwidth]{termpaper/images/pie-chart-03}
+\end{figure*}
+
 Thus, the department is not accurate in stating that Software Engineering students experience ``significant learning'' in software maintenance.
 
 \subsubsection{Ethical Analysis}
 
 If we can consider the Computer Science department to be equivalent to a student's manager or leader and the term of their enrollment to be employment, the department violates section 5.06 of the Software Engineering Code of Ethics by not accurately representing the amount of software maintenance done by students in the Software Engineering program.
+
+
+%\subsection{Avoid Deception in Public Statements}
+%
+%Section 1.06 of the Code states that a professional Software Engineer must
+%
+%\begin{quote}
+%Be fair and avoid deception in all statements, particularly public ones, concerning software or related documents, methods and tools.\cite{secode}
+%\end{quote}
+%
+%\subsubsection{Public Statements}
+
+
 
 %%%%%%%%%%%%%%%%
 %%% Conclusion %%%
